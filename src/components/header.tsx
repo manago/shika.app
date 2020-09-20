@@ -1,50 +1,27 @@
-import Link from 'next/link'
 import Head from 'next/head'
-import ExtLink from './ext-link'
-import { useRouter } from 'next/router'
 import styles from '../styles/header.module.css'
 
-const navItems: { label: string; page?: string; link?: string }[] = [
-  { label: 'Home', page: '/' },
-  { label: 'Blog', page: '/blog' },
-  { label: 'Contact', page: '/contact' },
-  { label: 'Source Code', link: 'https://github.com/ijjk/notion-blog' },
-]
-
-const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
+const ogImageUrl = '../../public/eltopo.jpeg'
 
 export default ({ titlePre = '' }) => {
-  const { pathname } = useRouter()
-
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} SHiKA:app BLOG</title>
+        <title>{titlePre ? `${titlePre} |` : ''} キネマトグラフ</title>
         <meta
           name="description"
-          content="An example Next.js site using Notion for the blog"
+          content="映画の感想をただ書いていくためのブログです。"
         />
-        <meta name="og:title" content="SHiKA:app BLOG" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <meta name="og:title" content="キネマトグラフ" />
         <meta property="og:image" content={ogImageUrl} />
-        <meta name="twitter:site" content="@_ijjk" />
+        <meta name="twitter:site" content="@ryo__kts" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={ogImageUrl} />
       </Head>
-      <ul>
-        {navItems.map(({ label, page, link }) => (
-          <li key={label}>
-            {page ? (
-              <Link href={page}>
-                <a className={pathname === page ? 'active' : undefined}>
-                  {label}
-                </a>
-              </Link>
-            ) : (
-              <ExtLink href={link}>{label}</ExtLink>
-            )}
-          </li>
-        ))}
-      </ul>
+      <a href="/">
+        <h1>&#x1f4fd;キネマトグラフ</h1>
+      </a>
     </header>
   )
 }
