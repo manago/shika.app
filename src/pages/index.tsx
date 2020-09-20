@@ -60,7 +60,7 @@ export default ({ posts = [], preview }) => {
       )}
       <div className={`${sharedStyles.layout} ${blogStyles.blogIndex}`}>
         <p className={blogStyles.description}>
-          試行錯誤BLOG
+          SHiKA:appの試行錯誤BLOG
         </p>
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>There are no posts yet</p>
