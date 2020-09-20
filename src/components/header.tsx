@@ -12,7 +12,7 @@ export default ({ titlePre = '' }) => {
           name="description"
           content="SHiKA:appの試行錯誤BLOG"
         />
-        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href="favicon.ico" />
         <meta name="og:title" content="SHiKA:app" />
         <meta property="og:image" content={ogImageUrl} />
         <meta name="twitter:site" content="@manago" />
