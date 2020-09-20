@@ -19,7 +19,7 @@ export default ({ titlePre = '' }) => {
         <meta name="twitter:image" content={ogImageUrl} />
       </Head>
       <a href="/">
-        <h1>&#x1f4d3;SHiKA:app BLOG</h1>
+        <h1>SHiKA:app&#x1f58b;</h1>
       </a>
     </header>
   )
