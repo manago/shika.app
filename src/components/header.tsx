@@ -7,7 +7,7 @@ export default ({ titlePre = '' }) => {
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} SHiKA:app</title>
+        <title>{titlePre ? `${titlePre} |` : ''} SHiKA:app BLOG</title>
         <meta
           name="description"
           content="SHiKA:appの試行錯誤BLOG"
