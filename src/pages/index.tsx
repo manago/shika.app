@@ -60,7 +60,7 @@ export default ({ posts = [], preview }) => {
       )}
       <div className={`${sharedStyles.layout} ${blogStyles.blogIndex}`}>
         <p className={blogStyles.description}>
-          鑑賞した映画、アニメ、ドラマなどをまとめていく
+          試行錯誤BLOG
         </p>
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>There are no posts yet</p>
@@ -80,7 +80,7 @@ export default ({ posts = [], preview }) => {
               </h3>
               {post.Date && (
                 <div className="posted">
-                  {getDateStr(post.Date)}に投稿した。
+                  {getDateStr(post.Date)}POST
                 </div>
               )}
               <p>{post.Description}</p>
