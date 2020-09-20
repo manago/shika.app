@@ -153,7 +153,7 @@ const RenderPost = ({ post, redirect, preview }) => {
       <div className={blogStyles.post}>
         <h1>{post.Page || ''}</h1>
         {post.Date && (
-          <div className="posted">{getDateStr(post.Date)}に投稿した。</div>
+          <div className="posted">{getDateStr(post.Date)}POST</div>
         )}
         <hr />
 
