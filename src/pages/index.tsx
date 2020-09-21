@@ -59,9 +59,7 @@ export default ({ posts = [], preview }) => {
         </div>
       )}
       <div className={`${sharedStyles.layout} ${blogStyles.blogIndex}`}>
-        <p className={blogStyles.description}>
-          SHiKA:appの試行錯誤BLOG
-        </p>
+        <p className={blogStyles.description}>SHiKA:appの試行錯誤BLOG</p>
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>There are no posts yet</p>
         )}
@@ -79,9 +77,7 @@ export default ({ posts = [], preview }) => {
                 </Link>
               </h3>
               {post.Date && (
-                <div className="posted">
-                  {getDateStr(post.Date)}POST
-                </div>
+                <div className="posted">{getDateStr(post.Date)}POSTED</div>
               )}
               <p>{post.Description}</p>
               {/* <p>

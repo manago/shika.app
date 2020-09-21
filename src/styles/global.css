@@ -249,11 +249,11 @@ figure {
 }
 
 a {
-  color: #0070f3;
+  color: #092402;
   text-decoration: none;
 }
 a:hover {
-  color: #3291ff;
+  color: #087511;
 }
 
 .links {
@@ -302,10 +302,21 @@ h2 {
   outline: none;
 }
 
-p {
-  color: #555;
+.authors .posted {
+  font-size: 0.5rem;
+  color: rgb(77, 77, 77);
+}
+ol {
+  color: #222;
   font-weight: 400;
-  font-size: 0.94rem;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+
+ul {
+  color: #222;
+  font-weight: 400;
+  font-size: 0.9rem;
   line-height: 1.7;
 }
 pre {
